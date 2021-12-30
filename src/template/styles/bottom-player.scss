@@ -1,0 +1,75 @@
+footer button{
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.footer-player-container{
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  padding: 24px;
+  border: 1px solid white;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  padding: 0 16px;
+  justify-content: space-between;
+
+  .artist-cover {
+    width: 56px;
+    height: 56px;
+  }
+
+  > * {
+    display: flex;
+    width: 30%;
+  }
+
+  .footer-left {
+    justify-content: space-between;
+    svg{
+      fill: #31805a;
+    }
+    .track-data {
+      align-self: center;
+    }
+    .track-misc{
+      align-self: center;
+    }
+    button{
+      margin-left: 16px;
+    }
+  }
+  .footer-middle{
+    flex-direction: column;
+     .track-controls-container{
+       display: flex;
+       width: 300px;
+       justify-content: center;
+     }
+    .track-controls{
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .track-playback{
+      display: flex;
+      .track-playback-bar{
+        flex-grow: 1;
+        height: 16px;
+        .progress{
+          height: 100%;
+          width: 20%;
+          border-radius: 10px;
+          background-color: grey;
+        }
+      }
+    }
+  }
+}
+
+
