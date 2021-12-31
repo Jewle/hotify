@@ -1,0 +1,57 @@
+.track-list{
+  position: relative;
+}
+
+.track-list-header{
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: black;
+  font-weight: 200;
+  border-bottom: 1px solid silver;
+  .track-list-header-item{
+    font-size: 12px;
+    width: 167px;
+    text-align: left;
+  }
+
+}
+.track-set{
+
+  .track-set-item-data{
+    display: flex;
+    justify-content: space-between;
+     .tdata{
+      padding: 16px 0;
+      width: 167px;
+      font-size: 16px;
+       text-align: left;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+      .track-title{
+        display: flex;
+        flex-direction: column;
+      }
+       .track-data-cover{
+         width: 40px;
+         height: 40px;
+       }
+      .band-name{
+        font-size: 14px;
+        color: grey;
+        opacity: 0.9;
+      }
+    }
+
+    a{
+      text-decoration: underline;
+    }
+
+  }
+}
+

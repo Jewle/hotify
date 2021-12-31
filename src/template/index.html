@@ -16,25 +16,42 @@
                 <div class="left-menu-top-content">
                     <div class="left-menu-item"> <svg role="img" height="24" width="24" class="Svg-sc-1bi12j5-0 hDgDGI home-icon" viewBox="0 0 24 24">
                         <path d="M9 14h6v7h5V7.8l-8-4.6-8 4.6V21h5v-7zm1 8H3V7.2L12 2l9 5.2V22h-7v-7h-4v7z"></path></svg>
-                        <a href="#">Главная</a></div>
+                        <a class="left-menu-action" href="#">Главная</a></div>
                     <div class="left-menu-item">
                         <svg role="img" height="24" width="24" class="Svg-sc-1bi12j5-0 hDgDGI search-icon" viewBox="0 0 24 24"><path d="M16.387 16.623A8.47 8.47 0 0019 10.5a8.5 8.5 0 10-8.5 8.5 8.454 8.454 0 005.125-1.73l4.401 5.153.76-.649-4.399-5.151zM10.5 18C6.364 18 3 14.636 3 10.5S6.364 3 10.5 3 18 6.364 18 10.5 14.636 18 10.5 18z">
                         </path>
                         </svg>
-                        <a href="#">Поиск</a>
+                        <a class="left-menu-action" href="#">Поиск</a>
                     </div>
                     <div class="left-menu-item">
-                        <a href="#">
-                            <svg role="img" height="24" width="24" class="Svg-sc-1bi12j5-0 hDgDGI collection-icon" viewBox="0 0 24 24"><path d="M13.66 4.097l-.913.406 7.797 17.513.914-.406L13.66 4.097zM3 22h1V4H3v18zm6 0h1V4H9v18z">
-                            </path></svg>
+                        <svg role="img" height="24" width="24" class="Svg-sc-1bi12j5-0 hDgDGI collection-icon" viewBox="0 0 24 24"><path d="M13.66 4.097l-.913.406 7.797 17.513.914-.406L13.66 4.097zM3 22h1V4H3v18zm6 0h1V4H9v18z">
+                        </path></svg>
+                        <a class="left-menu-action" href="#">
                             Моя медиатека
                         </a>
                     </div>
                 </div>
                 <div class="left-menu-bottom-content">
                     <div class="playlists-control">
-                        <div class="left-menu-item">Создать плейлист</div>
-                        <div class="left-menu-item">Мои любимые треки</div>
+                        <div class="left-menu-item">
+                            <button>
+                                <svg role="img" height="12" width="12" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 hDgDGI">
+                                    <path d="M14 7H9V2H7v5H2v2h5v5h2V9h5z"></path>
+                                    <path fill="none" d="M0 0h16v16H0z"></path></svg>
+                            </button>
+                            <a class="left-menu-action" href="#">Создать плейлист</a>
+                        </div>
+
+                        <div class="left-menu-item">
+                            <button class="loved-songs">
+                                <svg role="img" height="12" width="12" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 hDgDGI">
+                                    <path fill="none" d="M0 0h16v16H0z"></path>
+                                        <path d="M13.797 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253c-.77.77-1.194 1.794-1.194 2.883s.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195a4.052 4.052 0 001.195-2.883 4.057 4.057 0 00-1.196-2.883z">
+                                    </path>
+                                </svg>
+                            </button>
+                            <a class="left-menu-action" href="#">Мои любимы треки</a>
+                        </div>
                     </div>
                     <div class="playlists">
                         <ul>
@@ -60,6 +77,413 @@
 
             </div>
         </div>
+        <main>
+            <div class="header-wrapper">
+                <div class="section-bg"></div>
+                <header class="main-container">
+                    <div class="page-switcher">
+                        <button>
+                            <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" class="Svg-ytk21e-0 dMCjEC IYDlXmBmmUKHveMzIPCF"><polyline points="16 4 7 12 16 20" fill="none" stroke="#181818"></polyline>
+                            </svg>
+                        </button>
+                        <button>
+                            <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" class="Svg-ytk21e-0 dMCjEC IYDlXmBmmUKHveMzIPCF"><polyline points="8 4 17 12 8 20" fill="none" stroke="#181818">
+                            </polyline></svg>
+                        </button>
+                    </div>
+                    <div class="account-actions-wrapper">
+                        <div class="account-actions">
+                            <div class="account-item account-ava">
+                                <img src="src/template/img/ava.jfif" alt="">
+                            </div>
+                            <p class=" account-item account-name">Artyom Chizhov</p>
+                            <button class="account-item">
+
+                                <svg role="img" height="16" width="16" class="Svg-sc-1bi12j5-0 hDgDGI eAXFT6yvz37fvS1lmt6k" viewBox="0 0 16 16">
+                                    <path d="M3 6l5 5.794L13 6z"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="home-page-wrapper">
+                <div class="section-bg"></div>
+                <section class="home-page main-container">
+                    <section class="hello">
+                        <div class="hello-title title-1">
+                            Добрый день
+                        </div>
+                        <div class="hello-playlists">
+                            <div class="hello-playlist-card">
+                                <div class="hello-playlist-card-content">
+                                    <div class="playlist-cover cover-rounded">
+                                        <img class="cover-rounded" src="https://i.scdn.co/image/ab67616d0000b273e2818b40ea71ea97b3314e84" alt="">
+                                    </div>
+                                    <div class="playlist-name">
+                                        TO U
+                                    </div>
+                                    <button class="playlist-playButton roundedButton activated-bg">
+                                        <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true">
+                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor">
+                                            </polygon>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="hello-playlist-card">
+                                <div class="hello-playlist-card-content">
+                                    <div class="playlist-cover cover-rounded">
+                                        <img class="cover-rounded" src="https://misc.scdn.co/liked-songs/liked-songs-640.png" alt="">
+                                    </div>
+                                    <div class="playlist-name">
+                                        Любимые треки
+                                    </div>
+                                    <button class="playlist-playButton roundedButton activated-bg">
+                                        <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true">
+                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor">
+                                            </polygon>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="hello-playlist-card">
+                                <div class="hello-playlist-card-content">
+                                    <div class="playlist-cover cover-rounded">
+                                        <img class="cover-rounded" src="https://i.scdn.co/image/ab67616d0000b27369afdc16306876d5a76fe4b2" alt="">
+                                    </div>
+                                    <div class="playlist-name">
+                                        Страха нет
+                                    </div>
+                                    <button class="playlist-playButton roundedButton activated-bg">
+                                        <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true">
+                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor">
+                                            </polygon>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="hello-playlist-card">
+                                <div class="hello-playlist-card-content">
+                                    <div class="playlist-cover cover-rounded">
+                                        <img class="cover-rounded" src="https://i.scdn.co/image/ab67616d0000b273216bcc698a15eb6101b9c9e3" alt="">
+                                    </div>
+                                    <div class="playlist-name">
+                                        Kostolom
+                                    </div>
+                                    <button class="playlist-playButton roundedButton activated-bg">
+                                        <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true">
+                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor">
+                                            </polygon>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="hello-playlist-card">
+                                <div class="hello-playlist-card-content">
+                                    <div class="playlist-cover cover-rounded">
+                                        <img class="cover-rounded" src="https://mosaic.scdn.co/640/ab67616d00001e021f7fbedbd78e38e8989d60b6ab67616d00001e023aee5c4691f3428c61792151ab67616d00001e028f25782a53fb0b535ec754d0ab67616d00001e02e08b7e1807052c2859fd2293" alt="">
+                                    </div>
+                                    <div class="playlist-name">
+                                        TO U
+                                    </div>
+                                    <button class="playlist-playButton roundedButton activated-bg">
+                                        <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true">
+                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor">
+                                            </polygon>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="hello-playlist-card">
+                                <div class="hello-playlist-card-content">
+                                    <div class="playlist-cover cover-rounded">
+                                        <img class="cover-rounded" src="https://mosaic.scdn.co/640/ab67616d00001e022277315ae655737c7a870434ab67616d00001e0263a80ea4743f95b2806127afab67616d00001e0290cb592a8b3b38958e5a6f19ab67616d00001e02bf971ff2d68666c2533147ec" alt="">
+                                    </div>
+                                    <div class="playlist-name">
+                                        Various Mood Cruising
+                                    </div>
+                                    <button class="playlist-playButton roundedButton activated-bg">
+                                        <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true">
+                                            <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor">
+                                            </polygon>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+            <div class="track-list-wrapper">
+                <section class="track-list">
+                    <div class="track-list-header">
+                        <div class="track-list-header-item">#</div>
+                        <div class="track-list-header-item">НАЗВАНИЕ</div>
+                        <div class="track-list-header-item">АЛЬБОМ</div>
+                        <div class="track-list-header-item">ДАТА ДОБАВЛЕНИЯ</div>
+                        <div class="track-list-header-item">ЧАСИКИ</div>
+                    </div>
+                    <ul class="track-set">
+                        <li class="track-set-item">
+                            <ul class="track-set-item-data">
+                                <li class="tdata">1</li>
+                                <li class="tdata">
+                                    <div class="track-data-cover">
+                                        <img src="https://i.scdn.co/image/ab67616d000048519929bb4e1fb3302a2abd6853" alt="">
+                                    </div>
+                                    <div class="track-title">
+                                        <span>I am Damnation</span>
+                                        <span class="band-name"><a href="#">Bleed From Within</a></span>
+                                    </div>
+                                </li>
+                                <li class="tdata">Single</li>
+                                <li class="tdata">11 дней назад</li>
+                                <li class="tdata">4:30</li>
+                            </ul>
+                        </li>
+                        <li class="track-set-item">
+                            <ul class="track-set-item-data">
+                                <li class="tdata">1</li>
+                                <li class="tdata">
+                                    <div class="track-data-cover">
+                                        <img src="https://i.scdn.co/image/ab67616d000048519929bb4e1fb3302a2abd6853" alt="">
+                                    </div>
+                                    <div class="track-title">
+                                        <span>I am Damnation</span>
+                                        <span class="band-name"><a href="#">Bleed From Within</a></span>
+                                    </div>
+                                </li>
+                                <li class="tdata">Single</li>
+                                <li class="tdata">11 дней назад</li>
+                                <li class="tdata">4:30</li>
+                            </ul>
+                        </li>
+                        <li class="track-set-item">
+                            <ul class="track-set-item-data">
+                                <li class="tdata">1</li>
+                                <li class="tdata">
+                                    <div class="track-data-cover">
+                                        <img src="https://i.scdn.co/image/ab67616d000048519929bb4e1fb3302a2abd6853" alt="">
+                                    </div>
+                                    <div class="track-title">
+                                        <span>I am Damnation</span>
+                                        <span class="band-name"><a href="#">Bleed From Within</a></span>
+                                    </div>
+                                </li>
+                                <li class="tdata">Single</li>
+                                <li class="tdata">11 дней назад</li>
+                                <li class="tdata">4:30</li>
+                            </ul>
+                        </li>
+                        <li class="track-set-item">
+                            <ul class="track-set-item-data">
+                                <li class="tdata">1</li>
+                                <li class="tdata">
+                                    <div class="track-data-cover">
+                                        <img src="https://i.scdn.co/image/ab67616d000048519929bb4e1fb3302a2abd6853" alt="">
+                                    </div>
+                                    <div class="track-title">
+                                        <span>I am Damnation</span>
+                                        <span class="band-name"><a href="#">Bleed From Within</a></span>
+                                    </div>
+                                </li>
+                                <li class="tdata">Single</li>
+                                <li class="tdata">11 дней назад</li>
+                                <li class="tdata">4:30</li>
+                            </ul>
+                        </li>
+                        <li class="track-set-item">
+                            <ul class="track-set-item-data">
+                                <li class="tdata">1</li>
+                                <li class="tdata">
+                                    <div class="track-data-cover">
+                                        <img src="https://i.scdn.co/image/ab67616d000048519929bb4e1fb3302a2abd6853" alt="">
+                                    </div>
+                                    <div class="track-title">
+                                        <span>I am Damnation</span>
+                                        <span class="band-name"><a href="#">Bleed From Within</a></span>
+                                    </div>
+                                </li>
+                                <li class="tdata">Single</li>
+                                <li class="tdata">11 дней назад</li>
+                                <li class="tdata">4:30</li>
+                            </ul>
+                        </li>
+                        <li class="track-set-item">
+                            <ul class="track-set-item-data">
+                                <li class="tdata">1</li>
+                                <li class="tdata">
+                                    <div class="track-data-cover">
+                                        <img src="https://i.scdn.co/image/ab67616d000048519929bb4e1fb3302a2abd6853" alt="">
+                                    </div>
+                                    <div class="track-title">
+                                        <span>I am Damnation</span>
+                                        <span class="band-name"><a href="#">Bleed From Within</a></span>
+                                    </div>
+                                </li>
+                                <li class="tdata">Single</li>
+                                <li class="tdata">11 дней назад</li>
+                                <li class="tdata">4:30</li>
+                            </ul>
+                        </li>
+                        <li class="track-set-item">
+                            <ul class="track-set-item-data">
+                                <li class="tdata">1</li>
+                                <li class="tdata">
+                                    <div class="track-data-cover">
+                                        <img src="https://i.scdn.co/image/ab67616d000048519929bb4e1fb3302a2abd6853" alt="">
+                                    </div>
+                                    <div class="track-title">
+                                        <span>I am Damnation</span>
+                                        <span class="band-name"><a href="#">Bleed From Within</a></span>
+                                    </div>
+                                </li>
+                                <li class="tdata">Single</li>
+                                <li class="tdata">11 дней назад</li>
+                                <li class="tdata">4:30</li>
+                            </ul>
+                        </li>
+                        <li class="track-set-item">
+                            <ul class="track-set-item-data">
+                                <li class="tdata">1</li>
+                                <li class="tdata">
+                                    <div class="track-data-cover">
+                                        <img src="https://i.scdn.co/image/ab67616d000048519929bb4e1fb3302a2abd6853" alt="">
+                                    </div>
+                                    <div class="track-title">
+                                        <span>I am Damnation</span>
+                                        <span class="band-name"><a href="#">Bleed From Within</a></span>
+                                    </div>
+                                </li>
+                                <li class="tdata">Single</li>
+                                <li class="tdata">11 дней назад</li>
+                                <li class="tdata">4:30</li>
+                            </ul>
+                        </li>
+                        <li class="track-set-item">
+                            <ul class="track-set-item-data">
+                                <li class="tdata">1</li>
+                                <li class="tdata">
+                                    <div class="track-data-cover">
+                                        <img src="https://i.scdn.co/image/ab67616d000048519929bb4e1fb3302a2abd6853" alt="">
+                                    </div>
+                                    <div class="track-title">
+                                        <span>I am Damnation</span>
+                                        <span class="band-name"><a href="#">Bleed From Within</a></span>
+                                    </div>
+                                </li>
+                                <li class="tdata">Single</li>
+                                <li class="tdata">11 дней назад</li>
+                                <li class="tdata">4:30</li>
+                            </ul>
+                        </li>
+                        <li class="track-set-item">
+                            <ul class="track-set-item-data">
+                                <li class="tdata">1</li>
+                                <li class="tdata">
+                                    <div class="track-data-cover">
+                                        <img src="https://i.scdn.co/image/ab67616d000048519929bb4e1fb3302a2abd6853" alt="">
+                                    </div>
+                                    <div class="track-title">
+                                        <span>I am Damnation</span>
+                                        <span class="band-name"><a href="#">Bleed From Within</a></span>
+                                    </div>
+                                </li>
+                                <li class="tdata">Single</li>
+                                <li class="tdata">11 дней назад</li>
+                                <li class="tdata">4:30</li>
+                            </ul>
+                        </li>
+                        <li class="track-set-item">
+                            <ul class="track-set-item-data">
+                                <li class="tdata">1</li>
+                                <li class="tdata">
+                                    <div class="track-data-cover">
+                                        <img src="https://i.scdn.co/image/ab67616d000048519929bb4e1fb3302a2abd6853" alt="">
+                                    </div>
+                                    <div class="track-title">
+                                        <span>I am Damnation</span>
+                                        <span class="band-name"><a href="#">Bleed From Within</a></span>
+                                    </div>
+                                </li>
+                                <li class="tdata">Single</li>
+                                <li class="tdata">11 дней назад</li>
+                                <li class="tdata">4:30</li>
+                            </ul>
+                        </li>
+                        <li class="track-set-item">
+                            <ul class="track-set-item-data">
+                                <li class="tdata">1</li>
+                                <li class="tdata">
+                                    <div class="track-data-cover">
+                                        <img src="https://i.scdn.co/image/ab67616d000048519929bb4e1fb3302a2abd6853" alt="">
+                                    </div>
+                                    <div class="track-title">
+                                        <span>I am Damnation</span>
+                                        <span class="band-name"><a href="#">Bleed From Within</a></span>
+                                    </div>
+                                </li>
+                                <li class="tdata">Single</li>
+                                <li class="tdata">11 дней назад</li>
+                                <li class="tdata">4:30</li>
+                            </ul>
+                        </li>
+                        <li class="track-set-item">
+                            <ul class="track-set-item-data">
+                                <li class="tdata">1</li>
+                                <li class="tdata">
+                                    <div class="track-data-cover">
+                                        <img src="https://i.scdn.co/image/ab67616d000048519929bb4e1fb3302a2abd6853" alt="">
+                                    </div>
+                                    <div class="track-title">
+                                        <span>I am Damnation</span>
+                                        <span class="band-name"><a href="#">Bleed From Within</a></span>
+                                    </div>
+                                </li>
+                                <li class="tdata">Single</li>
+                                <li class="tdata">11 дней назад</li>
+                                <li class="tdata">4:30</li>
+                            </ul>
+                        </li>
+                        <li class="track-set-item">
+                            <ul class="track-set-item-data">
+                                <li class="tdata">1</li>
+                                <li class="tdata">
+                                    <div class="track-data-cover">
+                                        <img src="https://i.scdn.co/image/ab67616d000048519929bb4e1fb3302a2abd6853" alt="">
+                                    </div>
+                                    <div class="track-title">
+                                        <span>I am Damnation</span>
+                                        <span class="band-name"><a href="#">Bleed From Within</a></span>
+                                    </div>
+                                </li>
+                                <li class="tdata">Single</li>
+                                <li class="tdata">11 дней назад</li>
+                                <li class="tdata">4:30</li>
+                            </ul>
+                        </li>
+                        <li class="track-set-item">
+                            <ul class="track-set-item-data">
+                                <li class="tdata">1</li>
+                                <li class="tdata">
+                                    <div class="track-data-cover">
+                                        <img src="https://i.scdn.co/image/ab67616d000048519929bb4e1fb3302a2abd6853" alt="">
+                                    </div>
+                                    <div class="track-title">
+                                        <span>I am Damnation</span>
+                                        <span class="band-name"><a href="#">Bleed From Within</a></span>
+                                    </div>
+                                </li>
+                                <li class="tdata">Single</li>
+                                <li class="tdata">11 дней назад</li>
+                                <li class="tdata">4:30</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </section>
+            </div>
+        </main>
         <div class="footer-player-container">
             <footer>
                 <div class="footer-left">

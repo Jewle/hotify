@@ -1,8 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
 @import "bottom-player";
+@import "track-list";
 $base-color: #1b1218;
 $nav-bar-width: 384px;
 $svg-color:white;
+$playButton-size-1:40px;
+$activated-elements-bg: #1db954;
+.activated-bg{
+  background-color: $activated-elements-bg;
+}
+button{
+  background: none;
+  border: none;
+  outline: none;
+  &.roundedButton{
+    border-radius: 100%;
+  }
+}
+img{
+  width: 100%;
+  height: 100%;
+}
 
 *{
   margin: 0;
@@ -10,29 +28,39 @@ $svg-color:white;
   color: white;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-}
+  &::-webkit-scrollbar {
+    width: 1em;
+    position: relative;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
 
+
+}
+li{
+  list-style: none;
+}
 a{
   color: white;
   font-family: inherit;
   text-decoration: none;
 
 }
+.title-1{
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -.04em;
+  line-height: 36px;
+  text-transform: none
+}
 body{
   background-color: $base-color;
-}
-
-body::-webkit-scrollbar {
-  width: 1em;
-}
-
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
+  padding-bottom: 104px;
 }
 
 
@@ -64,6 +92,7 @@ svg{
   vertical-align: bottom;
 }
 .left-menu{
+
   position: fixed;
   height: 100%;
   top: 0;
@@ -75,7 +104,14 @@ svg{
   padding-left: 24px;
   padding-right: 24px;
   //border: 1px solid white;
-  width: $nav-bar-width+9px
+  width: $nav-bar-width+9px;
+  .left-menu-action{
+    display: block;
+    margin-left: 16px;
+    align-self: flex-end;
+  }
+
+
 }
 .playlists-control{
   margin-top: 24px;
@@ -99,16 +135,143 @@ svg{
 .left-menu-item{
   margin-top: 10px;
   width: 100%;
-
-  svg{
-    margin-right: 10px;
+  display: flex;
+  button{
+    width: 24px;
+    height: 24px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.loved-songs{
+      background: linear-gradient(135deg,#450af5,#c4efd9);
+    }
   }
+
 
 }
 .playlist-shadow{
   padding: 5px;
   position: absolute;
-  width: 100%;
+  width: 70%;
   box-shadow: 0px 15px 4px 0px rgb(0 0 0);
   top: 84px;
 }
+
+
+main{
+  margin-left: $nav-bar-width+9px;
+  position: relative;
+  .main-container{
+    width: 973px;
+    margin:0 auto;
+  }
+  .section-bg{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background: linear-gradient(0deg,hsla(0,0%,100%,0.2),hsla(0,0%,100%,0.2)) #1877f2;
+  }
+}
+
+header{
+  display: flex;
+  padding: 16px 0px;
+  justify-content: space-between;
+  svg,polyline{
+    stroke: white;
+  }
+}
+
+.header-wrapper{
+  position: relative;
+  .page-switcher{
+    button{
+      padding: 4px;
+      background: #000;
+      border-radius: 100%;
+      &:nth-child(2){
+        margin-left: 24px;
+      }
+    }
+  }
+.account-actions-wrapper{
+  background: black;
+  border-radius: 30px;
+  .account-actions{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+
+
+    .account-ava{
+      width: 28px;
+      height: 28px;
+      img{
+        border-radius: 100%;
+      }
+    }
+
+    .account-name{
+      font-size: 13px;
+      align-self: center;
+    }
+
+    .account-item{
+      margin-left: 2px;
+    }
+
+  }
+}
+
+}
+
+.home-page{
+
+  padding-top: 24px;
+  .hello-title{
+    margin-bottom: 16px;
+  }
+  .home-page-wrapper{
+    position: relative;
+  }
+}
+
+.hello-playlists{
+  display: grid;
+  row-gap: 16px;
+  column-gap: 16px;
+  grid-template-columns:minmax(270px,1fr) minmax(270px,1fr) minmax(270px,1fr) ;
+}
+.hello-playlist-card{
+  button{
+    height: $playButton-size-1;
+    width: $playButton-size-1;
+    margin-right: 16px;
+  }
+  .hello-playlist-card-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+  }
+  .cover-rounded{
+    border-radius: 5px 0 0 5px;
+  }
+  .playlist-cover{
+    width: 80px;
+    height: 80px;
+  }
+  .playlist-playButton{
+    padding: 7px;
+  }
+  .playlist-name{
+    width: 100px;
+    font-weight: 700;
+  }
+}
+
